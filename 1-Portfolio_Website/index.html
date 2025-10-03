@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaharyar Portfolio | Web Developer & Designer</title>
+    <meta name="description"
+        content="Welcome to Shaharyar's professional portfolio. Explore my work in web development, design, and creative projects.">
+    <meta name="keywords"
+        content="Shaharyar, Portfolio, Web Developer, Frontend Developer, HTML, CSS, JavaScript, Bootstrap, UI/UX Designer">
+    <meta name="author" content="Shaharyar">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourdomain.com/">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Shaharyar Portfolio | Web Developer">
+    <meta property="og:description"
+        content="Explore Shaharyar's portfolio featuring web development and design projects.">
+    <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:site_name" content="Shaharyar Portfolio">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shaharyar Portfolio | Web Developer">
+    <meta name="twitter:description"
+        content="Explore Shaharyar's portfolio featuring web development and design projects.">
+    <meta name="twitter:image" content="https://yourdomain.com/images/twitter-image.jpg">
+    <meta name="twitter:site" content="@yourTwitterHandle">
+
+    <!-- GitHub Meta Tag (Optional Custom Property for SEO) -->
+    <meta name="github:username" content="yourGitHubUsername">
+
+    <!-- Instagram Meta Tag (for discoverability only; Instagram doesn't support rich previews like Twitter/OG) -->
+    <meta name="instagram:username" content="yourInstagramHandle">
+
+    <!-- LinkedIn Profile for SEO -->
+    <meta name="linkedin:profile" content="https://www.linkedin.com/in/yourprofile">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Structured Data (JSON-LD for SEO and social profiles) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Shaharyar",
+        "url": "https://yourdomain.com",
+        "image": "https://yourdomain.com/images/og-image.jpg",
+        "sameAs": [
+            "https://github.com/yourGitHubUsername",
+            "https://www.instagram.com/yourInstagramHandle",
+            "https://www.linkedin.com/in/yourprofile",
+            "https://twitter.com/yourTwitterHandle"
+        ],
+        "jobTitle": "Web Developer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Naviagtion Bar  -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Shaharyar</a>
+
+            <div class="navbar-nav-desktop d-none d-lg-flex">
+                <a class="nav-link active" href="#home">Home</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#services">Services</a>
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </div>
+
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNav">
+                <span class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+            <!-- Tablet and Mobile Screens -->
+            <div class="offcanvas offcanvas-start d-lg-none" id="offcanvasNav">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Shaharyar</h5>
+                    <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#home" data-bs-dismiss="offcanvas">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about" data-bs-dismiss="offcanvas">About</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#services"
+                                data-bs-dismiss="offcanvas">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio"
+                                data-bs-dismiss="offcanvas">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h2 class="hero-greeting">Hello, It's Me</h2>
+                        <h1 class="hero-name">Muhammad Shaharyar</h1>
+                        <h3 class="hero-role">And I'm a <span id="role">FrontEnd Developer</span><span
+                                class="cursor">!</span></h3>
+                        <p class="hero-description">
+                            Passionate about crafting dynamic, user-friendly web experiences. I transform ideas into
+                            responsive, high-performance interfaces.
+                        </p>
+
+                        <!-- Social Media Icons -->
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+
+                        <div class="hero-buttons">
+                            <a href="#" class="btn-download">Download CV</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-lg-3">
+                    <div class="hero-image">
+                        <div class="hexagon-container">
+                            <img src="/Images/portfolioImage.png" alt="Muhammad Shaharyar" class="profile-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about-section scroll-reveal">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">About <span class="text-cyan">Me</span></h2>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <div class="hexagon-container">
+                            <img src="/Images/portfolioImage.png" alt="John Kendric" class="profile-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <p class="section-description ">
+                            I am a passionate <strong>Front-End Developer</strong>, <strong>UI Designer</strong>,
+                            <strong>Graphics Designer</strong>, and <strong>Content Creator (YouTuber)</strong>.
+                            With a keen eye for design and a strong technical background, I focus on building
+                            visually appealing, user-friendly, and responsive digital experiences. My goal is
+                            to blend creativity with functionality to deliver impactful results in every project I
+                            undertake.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="services-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title text-center">Our <span class="text-cyan">Services</span></h2>
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="service-card h-100 text-center">
+                        <div class="service-icon mb-3">
+                            <svg viewBox="0 0 24 24" fill="none" width="50" height="50"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 3L4 14H12L11 21L20 10H12L13 3Z" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-description">We create modern, responsive websites that combine functionality
+                            with design. Our solutions ensure performance, security, and seamless user experience for
+                            every business need.</p>
+                        <a href="#" class="service-link">Get Service</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="service-card h-100 text-center active">
+                        <div class="service-icon mb-3">
+                            <svg viewBox="0 0 24 24" fill="none" width="50" height="50"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Ui/UX Designer</h3>
+                        <p class="service-description">We design intuitive and visually appealing interfaces focused on
+                            user needs. Every detail is crafted to provide smooth navigation and engaging digital
+                            experiences.</p>
+                        <a href="#" class="service-link">Get Service</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="service-card h-100 text-center">
+                        <div class="service-icon mb-3">
+                            <svg viewBox="0 0 24 24" fill="none" width="50" height="50"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor"
+                                    stroke-width="2" />
+                                <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2" />
+                                <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Update Website</h3>
+                        <p class="service-description">We provide professional website updates, from design enhancements
+                            to technical improvements, ensuring your platform stays secure, modern, and user-friendly.
+                        </p>
+                        <a href="#" class="service-link">Get Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - Present</div>
+                        <h3 class="timeline-title">Senior Frontend Developer</h3>
+                        <h4 class="timeline-subtitle">TechCorp Solutions</h4>
+                        <p class="timeline-description">
+                            Leading frontend development for enterprise web applications. Responsible for architecting
+                            scalable React applications, mentoring junior developers, and implementing modern
+                            development practices. Increased application performance by 40%.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">GraphQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - 2023</div>
+                        <h3 class="timeline-title">Frontend Developer</h3>
+                        <h4 class="timeline-subtitle">Digital Agency Pro</h4>
+                        <p class="timeline-description">
+                            Developed responsive websites and web applications for various clients. Collaborated with
+                            designers and backend developers to deliver high-quality projects. Specialized in React,
+                            Vue.js, and modern CSS frameworks.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Sass</span>
+                            <span class="skill-tag">Webpack</span>
+                            <span class="skill-tag">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2021</div>
+                        <h3 class="timeline-title">Junior Web Developer</h3>
+                        <h4 class="timeline-subtitle">StartUp Innovations</h4>
+                        <p class="timeline-description">
+                            Started career as a junior developer working on various web projects. Gained experience in
+                            HTML, CSS, JavaScript, and basic backend technologies. Contributed to the development of the
+                            company's main product.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">jQuery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Latest <span class="text-cyan">Project</span></h2>
+            <div class="portfolio-slider">
+                <div class="slider-container">
+                    <div class="slide active">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="project-info">
+                                    <h3 class="project-title">E-Commerce Website</h3>
+                                    <p class="project-category">Web Design</p>
+                                    <p class="project-description">
+                                        A modern e-commerce platform built with React and Node.js. Features include user
+                                        authentication, shopping cart, payment integration, and admin dashboard. The
+                                        design focuses on user experience with smooth animations and responsive layout.
+                                    </p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">CSS</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                        <span class="tech-tag">Bootstrap</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">Live Demo</a>
+                                        <a href="#" class="project-link">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="project-image">
+                                    <img src="/Images/OnlineStore.png" alt="E-Commerce Website">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="project-info">
+                                    <h3 class="project-title">Mobile Banking App</h3>
+                                    <p class="project-category">Mobile Design</p>
+                                    <p class="project-description">
+                                        A secure mobile banking application with modern UI/UX design. Features include
+                                        account management, money transfers, bill payments, and transaction history.
+                                        Built with React Native for cross-platform compatibility.
+                                    </p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">CSS</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                        <span class="tech-tag">Bootstrap</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">Live Demo</a>
+                                        <a href="#" class="project-link">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="project-image">
+                                    <img src="/Images/BankingApp.png" alt="Mobile Banking App">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="project-info">
+                                    <h3 class="project-title">Portfolio Dashboard</h3>
+                                    <p class="project-category">Web Application</p>
+                                    <p class="project-description">
+                                        A comprehensive dashboard for portfolio management with real-time data
+                                        visualization. Features include interactive charts, performance analytics, and
+                                        portfolio optimization tools. Built with modern web technologies.
+                                    </p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">CSS</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                        <span class="tech-tag">Bootstrap</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">Live Demo</a>
+                                        <a href="#" class="project-link">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="project-image">
+                                    <img src="/Images/AdminPanel.avif" alt="Portfolio Dashboard">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn" onclick="changeSlide(-1)">❮</button>
+                    <div class="slider-dots">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                    <button class="slider-btn next-btn" onclick="changeSlide(1)">❯</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Contact <span class="text-cyan">Me!</span></h2>
+            <form class="contact-form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Your Name" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="tel" class="form-input" placeholder="Your Phone">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Subject">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <textarea class="form-input form-textarea" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="btn-submit">
+                        <span class="btn-text">Send Message</span>
+                        <div class="loading-spinner"></div>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row row-cols-2 footer-primary-content mb-4">
+                <div class="footer-section about">
+                    <h3 class="footer-title">Muhammad Shaharyar</h3>
+                    <p class="Footer-Text">
+                        I thrive on bringing creative designs to life, building intuitive user interfaces, and solving
+                        complex problems with elegant code.
+                    <p class="d-none d-md-block"> My expertise lies in modern JavaScript frameworks and crafting
+                        seamless web applications.</p>
+                    </p>
+                </div>
+                <div class="footer-section links d-flex align-items-center justify-content-center">
+                    <div>
+                        <h3 class="footer-title">Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-4">
+                <div class="col-12 col-md-auto text-center">
+                    <div class="social-links">
+                        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-text">Copyright &copy;<span id="current-year"></span> by Muhammad Shaharyar | All
+                    Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
