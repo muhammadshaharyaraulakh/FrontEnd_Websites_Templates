@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mega Mart</title>
+</head>
+
+<body>
+    <!--- Header --->
+    <header class="Container-fluid Upper-Nav-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-6 col-sm-5 col-5 py-2">
+                    <p class="Upper-Nav-bar-Para m-0">
+                        Welcome to Mega-Mart!
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-3 py-2 col-sm-4 col-4 d-none d-sm-block text-end">
+                    <p class="Upper-Nav-bar-Para m-0"><i class="fa-solid fa-location-dot fa-sm ps-1"
+                            style="color: #009dff;"></i><span class="ps-1">Sahiwal, Pakistan</span>
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-3 py-2 col-7 text-end">
+                    <a href="#" class="text-decoration-none">
+                        <p class="Upper-Nav-bar-Para m-0"><i class="fa-solid fa-truck fa-sm"
+                                style="color: #009dff;"></i> Track Order</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Navigation-Bar -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <h3 class="Logo-Heading"><i class="fa-solid fa-store logo-icon me-2"></i>Mega Mart</h3>
+                </a>
+                <button class="navbar-toggler Menu-color NavBar-Opener" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="index.html">
+                            <h3 class="Logo-Heading"><i class="fa-solid fa-store logo-icon me-2"></i>Mega Mart</h3>
+                        </a>
+                        <button type="button" class="btn-close text-reset Menu-color-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <!-- Navigation Items -->
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item my-2">
+                                <a class="nav-link Nav-Bar-style icon-only" href="Products.html">
+                                    <i class="fa-solid fa-box-open fa-2x"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item my-2 ">
+                                <a class="nav-link Nav-Bar-style icon-only" href="cart.html">
+                                    <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item my-2">
+                                <a class="nav-link Nav-Bar-style icon-only Navbar-item" href="Authentication.html">
+                                    <i class="fa-regular fa-user fa-2x"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <hr class="nav-divider m-0">
+    </div>
+
+</body>
+
+</html>
