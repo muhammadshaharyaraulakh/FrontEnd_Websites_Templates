@@ -1,4 +1,3 @@
-// Rotating Text Animation: cycles through roles with fade effect
 const roles = ["FrontEnd Developer", "YouTuber", "Ui Designer", "Graphics Designer"];
 let currentRoleIndex = 0;
 
@@ -20,7 +19,6 @@ function rotateRole() {
 
 setInterval(rotateRole, 3000);
 
-// Portfolio Slider: handles slide display and navigation
 let currentSlideIndex = 0;
 const slides = document.querySelectorAll('.slide');
 const dots = document.querySelectorAll('.dot');
